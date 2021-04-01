@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/jpg" href="app/img/favicon.png" />
+    <title>Pricing Component</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link href="dist/style.css" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="warning-banner" id="warning-banner">
+        <p id="warning-banner-p">This website is just a mockup, these services DOESN'T EXIST !!</p>
+        <p onclick="closeWarning()" id="close-button">Close</p>
+    </div>
+
+    <div class="container" id="container">
+        <div class="main-title">
+            <h2>Our Pricing</h2>
+        </div>
+        <div class="toggle">
+            <p>Annually</p>
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" onclick="checkbox()" />
+                <div class="slider round"></div>
+            </label>
+            <p>Monthly</p>
+        </div>
+        <div class="card basic">
+            <h4>Basic</h4>
+            <h1 id="basic-monthly"><strong>$</strong>199.99</h1>
+            <p>500 GB Storage</p>
+            <p>2 Users Allowed</p>
+            <p class="border-bottom">Send up to 3 GB</p>
+            <button onclick="warning()">Learn More</button>
+        </div>
+        <div class="card professional js-scroll fade-in-bottom">
+            <h4>Professional</h4>
+            <h1 id="professional-monthly"><strong>$</strong>249.99</h1>
+            <p>1TB Storage</p>
+            <p>5 Users Allowed</p>
+            <p class="border-bottom">Send up to 10 GB</p>
+            <button onclick="warning()">Learn More</button>
+        </div>
+        <div class="card master margin-0 js-scroll fade-in-bottom">
+            <h4>Master</h4>
+            <h1 id="master-monthly"><strong>$</strong>399.99</h1>
+            <p>2 TB Storage</p>
+            <p>10 Users Allowed</p>
+            <p class="border-bottom">Send up to 20 GB</p>
+            <button onclick="warning()">Learn More</button>
+        </div>
+    </div>
+
+    <p class="watermark js-scroll fade-in"><strong>Created by </strong><a target="_blank" rel="noreferrer"
+            href="https://instagram.com/mr_alwin_">Alwin Sunil</a></p>
+
+    <!-- Loading Wrapper -->
+    <div class="loader-wrapper" id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="app/js/script.js"></script>
+</body>
+
+</html>
