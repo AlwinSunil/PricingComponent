@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" type="image/jpg" href="app/img/favicon.png" />
     <title>Pricing Component</title>
+    <!-- Aniamtion Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -33,33 +36,35 @@
             </label>
             <p>Monthly</p>
         </div>
-        <div class="card basic">
-            <h4>Basic</h4>
-            <h1 id="basic-monthly"><strong>$</strong>199.99</h1>
-            <p>500 GB Storage</p>
-            <p>2 Users Allowed</p>
-            <p class="border-bottom">Send up to 3 GB</p>
-            <button onclick="warning()">Learn More</button>
-        </div>
-        <div class="card professional js-scroll fade-in-bottom">
-            <h4>Professional</h4>
-            <h1 id="professional-monthly"><strong>$</strong>249.99</h1>
-            <p>1TB Storage</p>
-            <p>5 Users Allowed</p>
-            <p class="border-bottom">Send up to 10 GB</p>
-            <button onclick="warning()">Learn More</button>
-        </div>
-        <div class="card master margin-0 js-scroll fade-in-bottom">
-            <h4>Master</h4>
-            <h1 id="master-monthly"><strong>$</strong>399.99</h1>
-            <p>2 TB Storage</p>
-            <p>10 Users Allowed</p>
-            <p class="border-bottom">Send up to 20 GB</p>
-            <button onclick="warning()">Learn More</button>
+        <div class="card-container">
+            <div class="card basic" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
+                <h4>Basic</h4>
+                <h1 id="basic-monthly"><strong>$</strong>199.99</h1>
+                <p>500 GB Storage</p>
+                <p>2 Users Allowed</p>
+                <p class="border-bottom">Send up to 3 GB</p>
+                <button onclick="warning()">Learn More</button>
+            </div>
+            <div class="card professional" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
+                <h4>Professional</h4>
+                <h1 id="professional-monthly"><strong>$</strong>249.99</h1>
+                <p>1TB Storage</p>
+                <p>5 Users Allowed</p>
+                <p class="border-bottom">Send up to 10 GB</p>
+                <button onclick="warning()">Learn More</button>
+            </div>
+            <div class="card master margin-0" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
+                <h4>Master</h4>
+                <h1 id="master-monthly"><strong>$</strong>399.99</h1>
+                <p>2 TB Storage</p>
+                <p>10 Users Allowed</p>
+                <p class="border-bottom">Send up to 20 GB</p>
+                <button onclick="warning()">Learn More</button>
+            </div>
         </div>
     </div>
 
-    <p class="watermark js-scroll fade-in"><strong>Created by </strong><a target="_blank" rel="noreferrer"
+    <p class="watermark"><strong>Created by </strong><a target="_blank" rel="noreferrer"
             href="https://instagram.com/mr_alwin_">Alwin Sunil</a></p>
 
     <!-- Loading Wrapper -->
@@ -67,6 +72,9 @@
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <script src="app/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
