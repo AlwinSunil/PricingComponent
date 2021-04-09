@@ -5,7 +5,6 @@ window.onload = function () {
   loader.style.display = "none";
   document.getElementById("body").style.height = "auto";
   document.getElementById("body").style.overflow = "auto";
-  addAnimation();
 };
 
 function checkbox() {
